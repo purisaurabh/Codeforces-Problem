@@ -3,7 +3,6 @@ using namespace std;
 
 int main()
 {   
-    ios::sync_with_stdio(false);
     int n, m;
     cin >> m >> n;
     bool B[m][n], A[m][n], C[m][n];
