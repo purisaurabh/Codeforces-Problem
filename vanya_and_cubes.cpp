@@ -15,13 +15,18 @@ int main()
 {
 	int n;
 	cin >> n;
-	int count = 0;
+	int sum = 0;
 	int i = 0 ;
-	while (count <= n)
+	while (sum <= n)
 	{
 		i++;
-		count += (i * (i + 1)) / 2;
+		sum += (i * (i + 1)) / 2;
 	}
  
 	cout << i - 1;
 }
+
+
+
+
+
