@@ -11,23 +11,23 @@ int main()
         int n, m;
         cin >> n >> m;
 
-        vector<string> v(n);
+        vector<string> vec(n);
 
         int count = 0;
         for (int i = 0; i < n; i++)
         {
-            cin >> v[i];
+            cin >> vec[i];
         }
 
         for (int i = 0; i < n; i++)
         {
-            if (v[i][m - 1] == 'R')
+            if (vec[i][m - 1] == 'R')
                 count++;
         }
 
         for (int i = 0; i < m; i++)
         {
-            if (v[n - 1][i] == 'D')
+            if (vec[n - 1][i] == 'D')
                 count++;
         }
 
