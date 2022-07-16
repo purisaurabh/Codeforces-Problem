@@ -1,1 +1,1 @@
-cout << row + column;
+v[s-

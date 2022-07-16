@@ -15,15 +15,15 @@ int main()
             v.push_back(i);
         }
     
-        vector<int> ans;
+        vector<int> res;
 
         while(v.size() > 1)
         {
-            int s = v.size();
+            int size = v.size();
 
-            int sum = v[s-1] + v[s-2];
-            ans.push_back(v[s-1]);
-            ans.push_back(v[s-2]);
+            int sum = v[size - 1] + v[size - 2];
+            res.push_back(v[size - 1]);
+            res.push_back(v[size - 2]);
         
             v.pop_back();
             v.pop_back();
@@ -37,9 +37,9 @@ int main()
     
         cout << v.back() << endl;
 
-        for(int i = 0 ; i < ans.size() ; i+=2)
+        for(int i = 0 ; i < res.size() ; i+=2)
         {
-            cout << ans[i] << " "<< ans[i+1] << endl;
+            cout << res[i] << " "<< res[i+1] << endl;
         }
     }
     return 0;
