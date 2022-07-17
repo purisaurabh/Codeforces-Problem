@@ -1,24 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 int main()
 {
     int n;
     cin >> n;
-    int arr[7];
+    vector<int>v(7);
     for(int i = 0 ; i < 7 ; i++)
     {
-        cin >> arr[i];
+        cin >> v[i];
     }
     
-    int i = 0;
+    int count = 0;
     while(n > 0)
     {
-        n = n - arr[i];
+        n = n - v[count];
         if(n <= 0)
             break;
-        i++;
-        i = i % 7;
+        count++;
+        count = count % 7;
     }
-    cout << i + 1<< endl;
+    cout << count + 1<< endl;
 }
