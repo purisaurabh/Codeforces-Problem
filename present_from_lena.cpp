@@ -5,11 +5,11 @@ int main()
 {
     int n;
     cin >> n;
-    for(int r = -n ; r <= n ; r++)
+    for(int row = -n ; row <= n ; row++)
     {
-        int t = n - abs(r);
+        int t = n - abs(row);
         
-        for(int i = 0 ; i < abs(r) ; i++)
+        for(int i = 0 ; i < abs(row) ; i++)
         {
             cout << "  ";
         }
