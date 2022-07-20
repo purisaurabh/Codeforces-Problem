@@ -6,11 +6,11 @@ int main()
     int n;
     cin >> n;
 
-    int s = n;
+    int sum = n;
     for (int i = 1; i < n; i++)
-        s += (n - i) * i;
+        sum += (n - i) * i;
 
-    cout << s << endl;
+    cout << sum << endl;
     return 0;
 }
 
